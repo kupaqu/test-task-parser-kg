@@ -1,3 +1,5 @@
+<?php
+
 // https://habr.com/ru/post/151795/
 
 function file_force_download($file) {
