@@ -2,6 +2,7 @@
 
 include_once('CurlRequest.php');
 set_time_limit(0);
+ini_set('memory_limit', '256M');
 
 $myCurlRequest = new CurlRequest('C:\Users\Buda\PhpstormProjects\parse\\' . date('Y-m-d-H-i-s') . '.json');
 
