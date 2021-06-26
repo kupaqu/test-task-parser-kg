@@ -65,6 +65,8 @@ class CurlRequest
             file_put_contents($this->filename,
                 ', '.json_encode($obj, JSON_UNESCAPED_UNICODE), FILE_APPEND | LOCK_EX);
         }
+        $html->clear();
+        unser($html);
         // return $toJSON;
     }
 
