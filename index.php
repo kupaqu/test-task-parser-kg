@@ -18,4 +18,4 @@ foreach($countries as $country) {
 }
 
 // отдаем файл на скачивание
-file_force_download($filename);
+// file_force_download($filename);
