@@ -9,23 +9,23 @@ function parse($input, $output)
     foreach($doc->find('tbody tr') as $row) {
         $cells = $row->find('td');
         $obj = [
-            'name' => $cells[0]->innertext,
-            'instruction' => strip_tags($cells[1]->innertext),
-            'mnn' => $cells[2]->innertext,
-            'dosageForm' => $cells[3]->innertext,
-            'dosage' => $cells[4]->innertext,
-            'packing' => $cells[5]->innertext,
-            'manufacturerEnterprise' => $cells[6]->innertext,
-            'countryOrigin' => $cells[7]->innertext,
-            'certificateHolder' => $cells[8]->innertext,
-            'countryCertificateHolder' => $cells[9]->innertext,
-            'atx' => $cells[10]->innertext,
-            'pharmaGroup' => $cells[11]->innertext,
-            'essentialDrug' => $cells[12]->innertext,
-            'conditionsFromPharma' => $cells[13]->innertext,
-            'certificateNumber' => $cells[14]->innertext,
-            'issueDate' => $cells[15]->innertext,
-            'ean13' => $cells[16]->innertext
+            @'name' => $cells[0]->innertext,
+            @'instruction' => strip_tags($cells[1]->innertext),
+            @'mnn' => $cells[2]->innertext,
+            @'dosageForm' => $cells[3]->innertext,
+            @'dosage' => $cells[4]->innertext,
+            @'packing' => $cells[5]->innertext,
+            @'manufacturerEnterprise' => $cells[6]->innertext,
+            @'countryOrigin' => $cells[7]->innertext,
+            @'certificateHolder' => $cells[8]->innertext,
+            @'countryCertificateHolder' => $cells[9]->innertext,
+            @'atx' => $cells[10]->innertext,
+            @'pharmaGroup' => $cells[11]->innertext,
+            @'essentialDrug' => $cells[12]->innertext,
+            @'conditionsFromPharma' => $cells[13]->innertext,
+            @'certificateNumber' => $cells[14]->innertext,
+            @'issueDate' => $cells[15]->innertext,
+            @'ean13' => $cells[16]->innertext
         ];
 
         // дописываем JSON в конец файла
