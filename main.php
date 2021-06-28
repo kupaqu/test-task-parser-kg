@@ -32,7 +32,6 @@ foreach($countries as $proizvod) {
 
     // парсим html-файл
     parse($curdate.'/'.$proizvod.'.html', $curdate.'/'.$json_filename);
-    $cnt += $step;
     usleep(100000);
     echo 'a'; 
     ob_flush(); 
