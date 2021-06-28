@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     function fprogress(e) { 
-      document.getElementById('progress').innerHTML ='progress: ' + e.loaded + ' from 242 countries'; 
+      document.getElementById('progress').innerHTML ='progress: ' + e.loaded + ' from 236 countries'; 
     }
     function call() {  
       var req = new XMLHttpRequest();  
