@@ -40,4 +40,4 @@ foreach($countries as $proizvod) {
 
 fclose($log);
 
-echo 'Время выполнения парсинга: ' . round(microtime(true) - $start, 4) . ' сек.';
+// echo 'Время выполнения парсинга: ' . round(microtime(true) - $start, 4) . ' сек.';
