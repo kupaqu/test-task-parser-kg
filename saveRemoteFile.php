@@ -53,7 +53,7 @@ function saveRemoteFile($url, $filename, $post)
 }
 
 // вспомогательная функция для непосредственной записи в файл
-function curlWriteFile($cp, $data) { // что за аргумент $cp? почему-то без него, блять, не работает
+function curlWriteFile($cp, $data) {
     global $GlobalFileHandle;
     $len = fwrite($GlobalFileHandle, $data);
     return $len;
